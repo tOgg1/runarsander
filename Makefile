@@ -13,3 +13,8 @@ migrate:
 .PHONY: makemigr
 makemigr:
 	python manage.py makemigrations
+
+
+.PHONY: freeze
+freeze:
+	pip freeze > requirements.txt
